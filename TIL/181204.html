@@ -1,0 +1,255 @@
+<ol>
+  <li>
+    http 상태코드 2xx 성공, 3xx 재연결 필요, 4xx 실패, 5xx서버에서의 실패,
+  </li>
+
+  <li>
+    proxy, gateway, tunnel 프록시는 클라이언트와 서버간의 연결체역할,
+    게이트웨이는 다른 서버를 중계하는 서버, 터널은 서로 떨어진 두대의
+    클라이언트와 서버 사이를 중계, 접속을 주선하는 프로그램
+  </li>
+
+  <li>
+    TCP/IP 모든 프로토콜을 일컽는데, 그냥 TCP/IP가 가장 대표적인 두가지이기
+    때문에 이렇게 부름
+  </li>
+
+  <li>
+    캐시 사본을 저장해주어서 다시 또 오리진 서버에 다가 올 필요가 없도록 해줌
+  </li>
+
+  <li>
+    HTTP헤더필드 HTTP헤더 필드는 4가지로 나누어진다. 일반적 헤더필드, 리퀘스트
+    헤더필드, 리스폰스 헤더필드, 엔티티 헤더필드 일반적 헤더필드 : 리퀘스트
+    메세지와, 리스폰스 헤더필드를 범용하여 사용할 수 있는 헤더필드 리퀘스트
+    헤더필드 : 클라이언트 => 서버, 클라이언트의 정보, 리스폰스 컨텐츠에 관한
+    우선순위를 정리 리스폰스 헤더필드 : 서버 => 클라이언트, 리스폰스의 정보와
+    서버의 정보, 클라이언트의 추가요구등을 부가 엔티티헤더필드 : 콘텐츠 갱신
+    시간 등의 엔티티에 관한 정보등을 부가
+  </li>
+
+  <li>이외의 헤더필드 쿠키를 위한 헤더필드,</li>
+
+  <li>
+    일반헤더필드 cache-control, connection, date, pragma, trailer,
+    transfet-Encoding, Upgrade, Via, Warning
+  </li>
+
+  <li>
+    리퀘스트 헤더 필드 Accept, Accept-Charset, Accept-Encoding, Accept-Language,
+    Authorization, Expect, Form, Host, if-Match, if-Modified-Since,
+    if-None-Match, if-Range, if-Unmodified-Since, Max-Forwards,
+    Proxy-Authorization, Range, Referer, TE, User-Agent
+  </li>
+
+  <li>
+    리스폰스 헤더 필드 Accept-Ranges, Age, Etag, Location, Proxy-Authenticate,
+    Retry-After, Server, Vary, WWW-Authenticate
+  </li>
+
+  <li>
+    엔티티 헤더 필드 Allow, Content-Encoding, Content-Language, Content-Length,
+    Content-Location, Content-MD5, Content-Range, Content-Type, Expires,
+    Last-Modified
+  </li>
+  <li>하나하나 무슨용도일까요?</li>
+</ol>
+
+<ul>
+  * 일반헤더필드
+</ul>
+
+<ol>
+  <li>Cache-Control : 디렉티브로 불리는 명령을 사용해서 캐싱 동작을 지정</li>
+
+  <li>
+    Connection : 두 가지 일을 합니다. 1. 프록시에 더 이상 저장하지 않는 헤더
+    필드 지정, 2. 지속적 접속 관리
+  </li>
+
+  <li>Date : HTTP메세지가 생성된 날짜를 나타냄</li>
+
+  <li>
+    Pragma : Cache-Con은 것인데, 구버전의 전유물임. 항상 체크해줘야함, 어떤
+    것들이 구 버전 인지를 모르니까
+  </li>
+
+  <li>
+    Trailer : 메세지 바디의 뒤에 기술되어 있는 헤더 필드를 미리 전달할 수 있게
+    해줌
+  </li>
+
+  <li>Transfer-Encoding : 전송 코딩 형식을 지정하는 경우에 사용</li>
+
+  <li>Upgrade : HTTP 및 다른 프로토콜의 새로운 버전이 통신에 이용될 때 사용</li>
+
+  <li>
+    Via : 클라이언트와 서버간의 리퀘스트 혹은 리스폰스 메세지의 경로를 알기 위해
+    사용됨
+  </li>
+
+  <li>
+    Warning : 리스폰스에 관한 추가 정보, 기본적으로 캐시의 문제에 관한 경고를
+    유저엥게 전달.
+  </li>
+</ol>
+
+<ul>
+  * 리퀘스트 헤더 필드
+</ul>
+
+<ol>
+  <li>
+    Accept : 유저 에이전트에 처리할 수 있는 미디어 타입과 미디어 타입의 상대적인
+    우선 순위를 전달하기 위해서 사용.
+  </li>
+
+  <li>
+    Accept-Charset : 유저 에이전트에서 처리할 수 있는 문자셋으로, 문자셋의
+    상대적인 우선 순위를 전달하기 위해서 사용.
+  </li>
+
+  <li>
+    Accept-Encoding : 유저 에이전트가 처리할 수 있는 콘텐츠 코딩과 콘텐츠 코딩의
+    상대적인 우선 순위를 전달하기 위해서 사용.
+  </li>
+
+  <li>
+    Accept-Language : 유저 에이전트가 처리할 수 있는 언어의 상대적인 우선 순위를
+    전달하기 위해서 사용.
+  </li>
+
+  <li>Authorization : 유저 에이전트의 인증 정보를 전달하기 위해서 사용.</li>
+
+  <li>
+    Expect : 클라이언트가 서버에 특정 동작 요구를 전달함. 반환을 못한다면 에러
+    반환
+  </li>
+
+  <li>From : 유저 에이전트를 사용하고 있는 유저의 메일 주소를 전달</li>
+
+  <li>Host : request한 리소스의 인터넷 호스트와 포트 번호를 전달</li>
+  if 어쩌구면 조건무 리퀘스트라고 부릅니다. 당연하죠?
+  <li>if-Match : 서버상의 리소스를 특정하기 위해서 앤티티 태크 값을 전달</li>
+
+  <li>
+    if-Modified-Since : 리소스가 갱신된 날짜가 필드 값보다 새롭지 않다면
+    리퀘스트를 받아들이겠다는 뜻을 전달.
+  </li>
+
+  <li>
+    if-None-Match : 필드 값에 지정된 엔티티 태그 값이 지정된 리소스의 ETag값과
+    일치하지 않으면 리퀘스트를 받아들이겠다는 뜻을 가지고 있음. if-Match와
+    정반대의 동작
+  </li>
+
+  <li>
+    if-Range : 지정한 필드값과 지정한 리소스의 ETag값 혹은 날짜가 일치하면 Range
+    리퀘스트로서 처리하고 싶다는 것을 전달.
+  </li>
+
+  <li>
+    if-Unmodified-Since : 지정된 리소스가 필드 값에 지정된 날짜 이후에 갱신되어
+    있지 않은 경우에만 리퀘스트를 받아들이도록 전달, if-Modified-Since와
+    정반대로 동작
+  </li>
+
+  <li>
+    Max-Forwards : TRACE, OPTIONS메서드에 의한 리퀘스트를 할 때에 전송해도 좋은
+    서버 수의 최대치를 입력해서 지정
+  </li>
+
+  <li>
+    Proxy-Authorization : 프록시 서버에서의 인증 요구를 받아들인 때에 인증에
+    필요한 클라이언트의 정보를 전달
+  </li>
+
+  <li>
+    Range(12번) : 리소수의 일부분만 취득하는 range리퀘스트를 할 때 지정 범위를
+    전달.
+  </li>
+
+  <li>Referer : 리퀘스트가 발생한 본래 리소스의 URI를 전달</li>
+
+  <li>
+    TE : 리스폰스로 받을 수 있는 전송 코딩의 형식과 상대적인 우선 순위를 전달
+  </li>
+
+  <li>
+    User-Agent : 리퀘스트를 생성한 브라우저와 유저 에이전트의 이름 등을 전달받기
+    위환 필드
+  </li>
+</ol>
+
+<ul>
+  * 리스폰스 헤더 필드
+</ul>
+
+<ol>
+  <li>
+    Accept-Ragnes : 서버가 리소스의 일부분만 지정해서 취득할 수 있는
+    range리퀘스트를 접수할 수 있는지 여부를 전달
+  </li>
+
+  <li>
+    Age : 얼마나 오래 전에 오리진 서버에서 리스폰스가 생성되었는지를 전달.
+  </li>
+
+  <li>
+    ETa : 엔티티 태그라고 불리며 일의적으로 리소스를 특정하기 위한 문자열을
+    전달.
+  </li>
+
+  <li>
+    Proxy-Authenticate : 프록시 서버에서의 인증 요구를 클라이언트에게 전달.
+  </li>
+
+  <li>
+    Retry-After : 클라이언트가 일정 시간 후에 리퀘스트를 다시 시행해야 하는지를
+    전달.
+  </li>
+
+  <li>Server : 서버에 설치되어 있는 HTTP 서버의 소프트웨어를 전달.</li>
+
+  <li>Vary : 캐시를 컨트롤 하기 위해서 사용.</li>
+
+  <li>
+    WWW-Authenticate : HTTP엑세스 인증에 사용됨, request-URI에 지정했던 리소스에
+    적용할 수 있는 인증 스키마와 파라미터를 나타내는 challenge를 전달
+  </li>
+</ol>
+
+<ul>
+  * 엔티티 헤더 필드
+</ul>
+
+<ol>
+  <li>Allow : request-URI에 지정된 리소스가 제공하는 메서드의 일람을 전달</li>
+
+  <li>
+    Content-Encoding : 서버가 엔티티 바디에 대해서 실시한 콘텐츠 코딩 형식을
+    전달
+  </li>
+
+  <li>Content-Language : 엔티티 바디에 사용된 언어를 전달함</li>
+
+  <li>Content-Length : 엔티티 바디의 크기를 전달함.</li>
+
+  <li>Content-Location : 메세지 바디에 대응하는 URI를 전달함.</li>
+
+  <li>
+    Content-MD5 : 메세지 바디가 변경되지 않고 도착했는지 확인하기 위해
+    MD5알고리즘에 의해서 생성된 값을 전달.
+  </li>
+
+  <li>
+    Content-Range : 범위를 지정해서 일부분만을 리퀘스트하는 Range 리퀘스트에
+    대해서 리스폰스 할 때에 사용.
+  </li>
+
+  <li>Content-Type : 엔티티 바디에 포함되는 오브젝트의 미디어 타입을 전달.</li>
+
+  <li>Expires : 리소스의 유효 기간 날짜를 전달</li>
+
+  <li>Last-Modified : 리소스가 마지막으로 갱신 되었던 날짜 정보를 전달.</li>
+</ol>
