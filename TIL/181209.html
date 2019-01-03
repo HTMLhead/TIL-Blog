@@ -1,0 +1,40 @@
+<ol>
+  <li>
+    request line : http request message에서 header 줄을 통상적으로 request line
+    이라고 부름. 통상적으로
+    <code>request-method-name request-URI HTTP-version</code> 의 형태를 가지고
+    있으며, 각자가 뜻하는 바는 아래와 같다.
+  </li>
+  <li>
+    request-method-name: HTTP protocol은 GET, POST, HEAD, OPTIONS, DELETE 등등의
+    요청하는 메서드들을 정의하고, 클라이언트들은 이러한 메서드를 이용해 서버에
+    필요한 정보를 요청한다.
+  </li>
+
+  <li>request-URI: 요청한 resourse를 지정한다.</li>
+
+  <li>HTTP-version: HTTP/1.0이나 HTTP/1.1 두개의 버전이 현재 존재한다.</li>
+
+  <li>
+    http request method : GET, HEAD, POST, PUT, DELETE, TRACE, OPTIONS, CONNECT
+    그리고 다른 확장 메서드들이 존재하며, 이것들이 어떤 작용을 하는지는 나올 때
+    마다 찾아보며 알아볼 수 있도록 할 것.
+  </li>
+
+  <li>query string : 웹 클라이언트에서 서버로 전달하는 데이터 방식</li>
+
+  <li>
+    status line : http response message에서 header 줄을 통상적으로 status
+    line이라고 부름 통상적으로
+    <code>HTTP-version status-code reason-phrase</code>
+  </li>
+
+  <li>HTTP-version: HTTP/1.0이나 HTTP/1.1 두개의 버전이 현재 존재한다</li>
+
+  <li>status-code : 요청 결과를 처리하기 위해 서버가 생성한 3자리의 숫자.</li>
+
+  <li>
+    reason-phrase : status-code에 대한 짤막한 설명 자주나오는 문장으로는 "200
+    OK", "404 Not Found", "403 Forbidden", "500 Internal Server Error" 가 있음.
+  </li>
+</ol>
