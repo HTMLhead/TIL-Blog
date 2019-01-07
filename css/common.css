@@ -10,11 +10,17 @@
 }
 
 @keyframes walking {
+    0% {
+        background: url("../photo/walking2.png") no-repeat left 1.4px;
+        background-size:15px 18px;
+    }
     50% {
         background: url("../photo/walking1.png") no-repeat left 1.4px;
+        background-size:15px 18px;
     }
     100% {
         background: url("../photo/walking2.png") no-repeat left 1.4px;
+        background-size:15px 18px;
     }
 }
 header {
@@ -43,16 +49,25 @@ footer{
 }
 
 ul > li {
-    background: url("../photo/standing.png") no-repeat left 5px;
-    background-size:10px 11px;
+    margin:10px 0px;
+    background: url("../photo/standing.png") no-repeat left 1.4px;
+    background-size:15px 18px;
     padding-left: 1em;
 }
 
 .TIL-index-link {
-    font-size:18px;
+    color:#000;
+    font-size:20px;
     text-decoration: none;
 }
 
+.TIL-index-link:hover {
+    text-decoration: underline;
+}
+
+.TILIndex:hover{
+    animation: walking 1s linear infinite
+}
 
 
 
