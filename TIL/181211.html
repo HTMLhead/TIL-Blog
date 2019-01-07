@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/common.css" />
+  </head>
+  <body>
+    <ol style="list-style-type: decimal">
+      <li>html문서는 html로 시작해서 html로 끝난다.</li>
+      <li>
+        head태그는 뭐하는 놈일까? 겉에서 무언가 표현해주는 놈은 아니고,
+        html문서에대한 추가적인 설명을 담고 있음.
+      </li>
+      <li>그럼 body태그는? 화면에 표현되야 할것들이 존재함</li>
+      <li>
+        html은 계층적이다.<code>&lt;div&gt;, &lt;section&gt;</code> 등이 생긴
+        이유가 이것 아닐까?
+      </li>
+      <li>html은 태그를 사용해서 표현한다.</li>
+      <li>
+        js와 css가 html안 여기저기에 존재한다. html파일 내부를 보면 script쪽
+        파일도 있고 style쪽에 css파일이 링크로 들어가서 html을 뒷받침 해준다.
+      </li>
+      <li>
+        script태그는 body태그가 끝나기직전이나 끝난 후에 넣는 것이 일반적,
+        하지만 최근에는 async나 defer 속성을 사용해서 선언한 곳과 스크립트 실행
+        기점을 분리시킬 수 있음.
+      </li>
+      <li>
+        global layout이 발생하는 경우 인터넷 창의 크기를 변경시키거나 폰트의
+        크기나 폰트를 변경하게 되면 global layout이 발생함.
+      </li>
+      <li>
+        block박스와 inline 박스 block박스는 아래위로만 쌓을 수 있고 inline박스는
+        옆으로 쌓을 수 있음. 물론 css로 바꿔줄 수 있음. block tags들은 html,
+        address, blockque, body, dd, div, dl, dt, fieldset, footer, form, frame,
+        frameset, h1~h6, noframes, ol, p, ul, center, dir, hr, menu, pre 등… 이
+        있음.
+      </li>
+      <li>
+        브라우저는 프린터기처럼 한픽셀한픽셀 그려줌 한방에 그려주지 않는다는
+        것을 기억할 것. 1px단위의 꾸밈을 중요시 할 수 있는 개발자가 되자
+      </li>
+      <li>
+        tag들은 각각 종류가 있고 정확한 의미가 있음=&gt; 시멘틱한 태그 라고 말할
+        수 있음.(각각 어떤 의미를 가지고 있다.) 그러므로 용도에 맞는 사용이
+        필요함.
+      </li>
+      <li>레이아웃을 위한 태그 header, nav, section, article, aside, footer</li>
+      <li>
+        html 에서 class값, id값을 주는 이유, id 값과 class값의 다른점 동일한
+        class값을 가지고 있는 것들을 동일한 css값을 지정해 주기 위해서, class를
+        사용할 때엔(무조건 사용해야 겠지만,) 클래스의 이름을 짓는 나름의 규칙을
+        꼭 가지고 있을 것. id값은 절대적으로 하나만 존재할 때에 어떤 이름을
+        붙여주고싶다! 하면 사용. 다른 페이지에서 어떻게 사용하는지 보고 파악한
+        뒤에 따라하는것 또한 나쁘지 않음.
+      </li>
+      <li>
+        inline, internal, external inline : 1. tag내에 적용 2. 다른 css파일에
+        적용한 것 보다 가장 먼저 적용. internal : 1. style 태그로 지정 2. 구조와
+        스타일이 섞이게 되므로 유지보수가 어려움 3. 별도의 CSS파일을 만들지
+        않아도 됨.(서버에 css파일을 불러오기 위해서 요청할 필요가 없음. external
+        : 1. 외부파일로 지정
+      </li>
+    </ol>
+  </body>
+</html>
