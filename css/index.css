@@ -1,0 +1,15 @@
+@import url('./reset.css');
+
+
+.animated-head {
+    animation-duration: 3s;
+    animation-name: titleOpen;
+    background: url('../photo/headerImg.jpg') no-repeat, #819bb2;
+    background-size: 30vh;
+    height: 30vh;
+}
+
+.body-title {
+    font-size: 50px;
+    font-weight: 700;
+}

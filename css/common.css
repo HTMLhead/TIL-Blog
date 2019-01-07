@@ -1,27 +1,59 @@
 @import url('./reset.css');
+
 @keyframes titleOpen{
     from {
         height:0px;
     }
     to {
-        height: 60vh;
+        height: 30vh;
+    }
+}
+
+@keyframes walking {
+    50% {
+        background: url("../photo/walking1.png") no-repeat left 1.4px;
+    }
+    100% {
+        background: url("../photo/walking2.png") no-repeat left 1.4px;
     }
 }
 header {
-    transition: heigth 1s;
-    animation-duration: 3s;
-    animation-name: titleOpen;
     background: url('../photo/headerImg.jpg') no-repeat, #819bb2;
-    background-size: 60vh;
-    height: 60vh;
+    background-size: 30vh;
+    height: 30vh;
+    text-align:center;
+}
+
+.wholeBody{
+    margin:10px 250px;
+
+}
+
+footer{
+    background-color:#fbfbfb;
+    text-align:right;
+    padding:20px;
 }
 
 .title {
     display: inline-block;
     color: #fff;
-    font-size: 10vh;
-    margin-left: 63vh;
+    font-size: 5vh;
     margin-top: 10vh;
 }
+
+ul > li {
+    background: url("../photo/standing.png") no-repeat left 5px;
+    background-size:10px 11px;
+    padding-left: 1em;
+}
+
+.TIL-index-link {
+    font-size:18px;
+    text-decoration: none;
+}
+
+
+
 
 
