@@ -1,1 +1,27 @@
-@import url('./reset.css')
+@import url('./reset.css');
+@keyframes titleOpen{
+    from {
+        height:0px;
+    }
+    to {
+        height: 60vh;
+    }
+}
+header {
+    transition: heigth 1s;
+    animation-duration: 3s;
+    animation-name: titleOpen;
+    background: url('../photo/headerImg.jpg') no-repeat, #819bb2;
+    background-size: 60vh;
+    height: 60vh;
+}
+
+.title {
+    display: inline-block;
+    color: #fff;
+    font-size: 10vh;
+    margin-left: 63vh;
+    margin-top: 10vh;
+}
+
+
