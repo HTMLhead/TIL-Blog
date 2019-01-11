@@ -1,28 +1,6 @@
 @import url('./reset.css');
+@import url('./animation.css');
 
-@keyframes titleOpen{
-    from {
-        height:0px;
-    }
-    to {
-        height: 30vh;
-    }
-}
-
-@keyframes walking {
-    0% {
-        background: url("../photo/walking2.png") no-repeat left 1.4px;
-        background-size:15px 18px;
-    }
-    50% {
-        background: url("../photo/walking1.png") no-repeat left 1.4px;
-        background-size:15px 18px;
-    }
-    100% {
-        background: url("../photo/walking2.png") no-repeat left 1.4px;
-        background-size:15px 18px;
-    }
-}
 header {
     background: url('../photo/headerImg.jpg') no-repeat, #819bb2;
     background-size: 30vh;
